@@ -1,10 +1,9 @@
-import Resume from "@/assets/cv_s_axel.png";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
 const footerLinks = [
   {
     title: "Resume",
-    href: Resume.src,
+    href: "/cv_axel.pdf",
   },
   {
     title: "LinkedIn",
