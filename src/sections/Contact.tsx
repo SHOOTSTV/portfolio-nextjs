@@ -3,7 +3,7 @@ import grainImage from "@/assets/images/grain.jpg";
 
 export const ContactSection = () => {
   return (
-    <div className="py-16 pt-12 lg:py-24 lg:pt-20">
+    <div className="py-16 pt-12 lg:py-24 lg:pt-20" id="contact">
       <div className="container">
         <div className="relative z-0 overflow-hidden rounded-3xl bg-gradient-to-r from-emerald-300 to-sky-400 px-10 py-8 text-center text-gray-900 md:text-left">
           <div
@@ -20,12 +20,12 @@ export const ContactSection = () => {
                 and how I can help you achieve your goals.
               </p>
             </div>
-            <div>
+            <a href="mailto:stankiewiczaxel1@gmail.com">
               <button className="inline-flex h-12 w-max items-center gap-2 rounded-xl border border-gray-900 bg-gray-900 px-6 text-white">
                 <span className="font-medium">Contact me</span>
                 <ArrowUpRightIcon className="size-4" />
               </button>
-            </div>
+            </a>
           </div>
         </div>
       </div>

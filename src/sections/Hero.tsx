@@ -8,7 +8,10 @@ import Image from "next/image";
 
 export const HeroSection = () => {
   return (
-    <div className="relative z-0 overflow-x-clip py-32 md:py-48 lg:py-60">
+    <div
+      className="relative z-0 overflow-x-clip py-32 md:py-48 lg:py-60"
+      id="hero"
+    >
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -126,14 +129,20 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
-          <button className="z-10 inline-flex h-12 items-center gap-2 rounded-xl border border-white/15 px-6">
+          <a
+            href="#projects"
+            className="z-10 inline-flex h-12 items-center gap-2 rounded-xl border border-white/15 px-6 transition-colors hover:bg-white/5"
+          >
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
-          </button>
-          <button className="z-10 inline-flex h-12 items-center gap-2 rounded-xl border border-white bg-white px-6 text-gray-900">
+          </a>
+          <a
+            href="#contact"
+            className="z-10 inline-flex h-12 items-center gap-2 rounded-xl border border-white bg-white px-6 text-gray-900"
+          >
             <span>👋</span>
             <span className="font-semibold">Let's Connect</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>
