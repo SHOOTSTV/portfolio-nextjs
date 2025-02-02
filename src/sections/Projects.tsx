@@ -4,6 +4,7 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import portfolioAxel from "@/assets/images/portfolio-axel-react.png";
 import trelloClone from "@/assets/images/trello-clone.png";
+import { Card } from "@/components/Card";
 import Image from "next/image";
 
 // Portfolio projects data
@@ -53,10 +54,11 @@ export const ProjectsSection = () => {
 
         {/* Projects list */}
         <div className="mt-10 flex flex-col gap-20 md:mt-20">
-          {portfolioProjects.map((project) => (
-            <div
+          {portfolioProjects.map((project, projectIndex) => (
+            <Card
               key={project.title}
-              className="relative z-0 overflow-hidden rounded-3xl bg-gray-800 px-8 pt-8 after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-3xl after:outline after:outline-2 after:-outline-offset-2 after:outline-white/20 after:content-[''] md:px-10 md:pt-12 lg:px-20 lg:pt-16"
+              className="sticky px-8 pt-8 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
+              style={{ top: `calc(64px + ${projectIndex * 40}px ` }}
             >
               {/* Background grain effect */}
               <div
@@ -111,7 +113,7 @@ export const ProjectsSection = () => {
                   />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
