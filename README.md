@@ -52,7 +52,3 @@ npm run dev
 - [Portfolio Live](https://axelstz.netlify.app/)
 - [LinkedIn](https://www.linkedin.com/in/axelstankiewicz/)
 - [GitHub](https://github.com/SHOOTSTV)
-
-```
-
-```
