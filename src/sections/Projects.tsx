@@ -109,7 +109,11 @@ export const ProjectsSection = () => {
                   </ul>
 
                   {/* Site link button */}
-                  <a href={project.link}>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button className="mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-white px-6 font-semibold text-gray-950 md:w-auto">
                       <span>Visit Live Site</span>
                       <ArrowUpRightIcon className="size-4" />
