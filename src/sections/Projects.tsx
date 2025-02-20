@@ -2,6 +2,7 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import optimind from "@/assets/images/optimind.png";
 import portfolioAxel from "@/assets/images/portfolio-axel-react.png";
 import trelloClone from "@/assets/images/trello-clone.png";
 import { Card } from "@/components/Card";
@@ -32,6 +33,18 @@ const portfolioProjects = [
     ],
     link: "",
     image: portfolioAxel,
+  },
+  {
+    company: "Optimind",
+    year: "2025",
+    title: "AI SaaS Application",
+    results: [
+      { title: "SaaS Architecture & Next.js 13" },
+      { title: "Stripe Integration & Auth" },
+      { title: "AI Tools & API Routes" },
+    ],
+    link: "https://optimind-delta.vercel.app/",
+    image: optimind,
   },
 ];
 
