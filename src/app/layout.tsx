@@ -12,7 +12,46 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Axel Stankiewicz - Portfolio",
-  description: "Personal portfolio website of Axel Stankiewicz",
+  description:
+    "Web developer portfolio of Axel Stankiewicz, specialized in building modern web applications with React, Next.js, and TailwindCSS.",
+  keywords: [
+    "web developer",
+    "React",
+    "Next.js",
+    "TailwindCSS",
+    "portfolio",
+    "Axel Stankiewicz",
+  ],
+  authors: [{ name: "Axel Stankiewicz" }],
+  creator: "Axel Stankiewicz",
+  publisher: "Axel Stankiewicz",
+  robots: "index, follow",
+  metadataBase: new URL("https://www.axelstz.fr/"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.axelstz.fr/",
+    title: "Axel Stankiewicz - Portfolio",
+    description:
+      "Web developer portfolio of Axel Stankiewicz, specialized in building modern web applications with React, Next.js, and TailwindCSS.",
+    siteName: "Axel Stankiewicz's Portfolio",
+    images: [
+      {
+        url: "/meta-axel.png",
+        width: 1200,
+        height: 630,
+        alt: "Preview of Axel Stankiewicz's Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Axel Stankiewicz - Portfolio",
+    description:
+      "Web developer portfolio of Axel Stankiewicz, specialized in building modern web applications with React, Next.js, and TailwindCSS.",
+    images: ["/meta-axel.png"],
+    creator: "@axelstankiewicz",
+  },
   icons: {
     icon: [
       {
