@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "TailwindCSS",
     "portfolio",
     "Axel Stankiewicz",
+    "axelstz",
   ],
   authors: [{ name: "Axel Stankiewicz" }],
   creator: "Axel Stankiewicz",
